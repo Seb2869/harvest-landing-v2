@@ -129,7 +129,7 @@ section{
     /* max-width: 1440px; */
     height: 770px;
     margin: 0 auto;
-    background-image: url("./public/landingBackground.webp");
+    background-image: url("./public/landingBackground.webp"), url("./public/landingBackgroundThumbnail.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
