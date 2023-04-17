@@ -1,0 +1,390 @@
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local(''),
+        url('public/fonts/inter.woff2') format('woff2'),
+        url('public/fonts/inter.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Inter-fallback";
+    size-adjust: 100%;
+    letter-spacing: 10px;
+    descent-override: 24%;
+    ascent-override: 94%;
+    src: local("Arial");
+}
+
+html{
+    font-family: Inter, Inter-fallback;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 16px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a, button{
+    font-family: Inter, Inter-fallback;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+html, body{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    margin: 50px 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 21px;
+    letter-spacing: 0.07rem;
+    line-height: 31px;
+    color: #15202B;
+    margin-right: 40px;
+}
+
+.logo img{
+    background: #F6F6F6;
+    height: 52px;
+    width: 52px;
+    padding: 12px;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+.alignY{
+    display: flex;
+    align-items: center;
+}
+
+#navabr{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.navLink{
+    margin-right: 32px;
+    font-weight: 600;
+    color: #475467;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.navLink:hover{
+    color: black;
+}
+
+.openAppButton{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0.688861px 1.37772px rgba(16, 24, 40, 0.05);
+    font-weight: 600;
+}
+
+.smallAppButton{
+    font-size: 0.78rem;
+    padding: 11px 19px;
+    border-radius: 5.51089px;
+}
+
+.smallAppButton img{
+    width: 18px;
+    height: 14px;
+    margin-left: 8px;
+}
+
+#landing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* max-width: 1440px; */
+    height: 770px;
+    margin: 0 auto;
+    background-image: url("./public/landingBackground.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#news{
+    margin-top: 72px;
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 16.2333px;
+    color: #18371F;
+    padding: 5px;
+    font-size: 0.78rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#news span{
+    background-color: white;
+    color: #295332;
+    padding: 2px 10px;
+    border-radius: 16.2333px;
+}
+
+#landing h1{
+    font-size: 3.75rem;
+    margin: 16px 0 0 0;
+}
+
+#landing h2{
+    font-size: 1.3rem;
+    margin: 24px 0 40px 0;
+}
+
+
+
+.sectiontitle{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+.centerFlexColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hideMobile{
+    display: none;
+}
+
+.logoText{
+    display: none;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+}
+
+
+#landingInfo{
+    padding: 20px;
+}
+
+#landingInfo h1{
+    font-size: 1.8em;
+}
+
+#landingInfo p{
+    word-spacing: 0.1em;
+    font-size: 1em;
+}
+
+#landingButtons{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.landingButton{
+    border-radius: 14px;
+    padding: 15px 30px;
+    font-size: 1em;
+    margin: 10px 20px 10px 0;
+    font-weight: bold;
+    border: none;
+    background-color: white;
+    color: black;
+    box-shadow: 0px 2.86296px 2.86296px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out ;
+}
+
+.landingButton:hover{
+    box-shadow: 0px 1.86296px 1.86296px rgba(0, 0, 0, 0.25);
+    transform: translateY(2px);
+}
+
+#landing img{
+    display: none;
+    max-width: 55%;
+}
+
+#companies{
+    margin: 45px 0 20px 0;
+    font-size: 0.75em;
+}
+
+#companiesLogos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.company{
+    margin: 10px;
+}
+
+#backgorund{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#projectBoxes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projectBox{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    margin: 20px 30px;
+    background: #FFFFFF;
+    border: 1.4px solid #F2F2F2;
+    border-radius: 17px;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.15s ease-in-out;
+}
+
+.projectBox:hover{
+    transform: scale(1.02);
+}
+
+.projectName{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px 16px 0 0;
+    height: 170px;
+    overflow: hidden;
+}
+
+.projectName span{
+    z-index: 10;
+    font-size: 1.4rem;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    color: white;
+}
+
+.projectName img{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+}
+
+.projectDescription{
+    font-size: 1rem;
+    padding: 30px 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 16px 16px;
+    flex: 1;
+}
+
+#twitterBoxes{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.twitterBox{
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0px 1.3px 2.6px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.twitterBoxTitle{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.twitterBoxTitle img{
+    border-radius: 50%;
+}
+
+.ttProfile{
+    width: 20px;
+    height: 35px;
+    transition: transform 0.15s ease-in-out;
+}
+
+.ttProfile:hover{
+    transform: scale(1.1);
+}
+
+.ttProfile img{
+    width: 20px;
+    height: 35px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 63px;
+    background: #2A312F;
+}
+
+@media (min-width: 768px){
+    .hideMobile{
+        display: block;
+    }
+
+    .projectBox{
+        width: 380px;
+    }
+    .twitterBox{
+        margin: 30px 20px;
+    }
+}
+
+@media (min-width: 992px){
+    html{
+        font-size: 16px;
+    }
+    #landingInfo{
+        padding: 20px 20px 20px 50px;
+    }
+}

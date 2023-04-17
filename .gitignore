@@ -1,0 +1,14 @@
+webpack.config.js
+
+# dependencies
+/node_modules
+
+# production
+/dist
+
+# static assets
+/src/public
+
+# local env files
+.env
+
