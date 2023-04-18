@@ -121,11 +121,16 @@ section{
     margin-left: 8px;
 }
 
-#landingThumbnail{
-    background-image: url("./public/landingBackgroundThumbnail.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.largeAppButton{
+    font-size: 1.13rem;
+    padding: 16px 33px;
+    border-radius: 8.11667px;
+}
+
+.largeAppButton img{
+    width: 21px;
+    height: 18px;
+    margin-left: 12px;
 }
 
 #landing{
@@ -134,7 +139,7 @@ section{
     align-items: center;
     width: 100%;
     /* max-width: 1440px; */
-    height: 770px;
+    /* height: 868px; */
     margin: 0 auto;
     background-image: url("./public/landingBackground.webp");
     background-position: center;
@@ -144,7 +149,7 @@ section{
 }
 
 #news{
-    margin-top: 72px;
+    margin-top: 60px;
     background: rgba(255, 255, 255, 0.35);
     border-radius: 16.2333px;
     color: #18371F;
@@ -170,6 +175,12 @@ section{
     font-size: 1.3rem;
     margin: 24px 0 40px 0;
 }
+
+#harvestAppImg{
+    margin-top: 25px;
+    max-width: 100%;
+}
+
 
 
 
@@ -237,10 +248,6 @@ section{
     transform: translateY(2px);
 }
 
-#landing img{
-    display: none;
-    max-width: 55%;
-}
 
 #companies{
     margin: 45px 0 20px 0;
