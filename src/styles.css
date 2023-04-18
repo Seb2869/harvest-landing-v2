@@ -133,13 +133,19 @@ section{
     margin-left: 12px;
 }
 
+#landingThumbnail{
+    background-image: url("./public/landingBackgroundThumbnail.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
 #landing{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    /* max-width: 1440px; */
-    /* height: 868px; */
     margin: 0 auto;
     background-image: url("./public/landingBackground.webp");
     background-position: center;
