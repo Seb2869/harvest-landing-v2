@@ -21,3 +21,25 @@ const scrollToElements = document.getElementsByClassName('scrollTo');
         }, false)
     );
 });
+
+//nav
+const tooglerButton = document.getElementById('tooglerButton');
+const toogler = document.getElementById('toogler');
+const toogleNav = document.getElementById('toogleNav');
+let menuOpened = false;
+tooglerButton.addEventListener('click', () => {
+    if(!menuOpened){
+        menuOpened = true;
+        toogler.classList.remove('tooglerClosed');
+        toogler.classList.add('tooglerOpened');
+        toogleNav.style.display="block";
+        document.body.style.overflow = 'hidden';
+    }
+    else{
+        menuOpened = false;
+        toogler.classList.remove('tooglerOpened');
+        toogler.classList.add('tooglerClosed');
+        toogleNav.style.display="none";
+        document.body.style.overflow = 'auto';
+    }
+})

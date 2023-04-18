@@ -19,21 +19,30 @@
         <div class="alignY">
             <a class="logo" href="/">
                 <img src="public/logo.svg" alt="harvest logo"/>
-                Harvest
+                <span class="hideMobile">Harvest</span>
             </a>
-            <span class="scrollTo navLink" data-destination="features"><a href="https://t.me/maderaz" target="_blank"> Features</a></span>
-            <span class="scrollTo navLink" data-destination="docs"><a href="https://t.me/maderaz" target="_blank"> Docs</a></span>
-            <span class="scrollTo navLink" data-destination="community"><a href="https://t.me/maderaz" target="_blank"> Community</a></span>
+            <ul id="toogleNav">
+                <li><span class="scrollTo navLink" data-destination="features"><a href="https://t.me/maderaz" target="_blank"> Features</a></span></li>
+                <li><span class="scrollTo navLink" data-destination="docs"><a href="https://t.me/maderaz" target="_blank"> Docs</a></span></li>
+                <li><span class="scrollTo navLink" data-destination="community"><a href="https://t.me/maderaz" target="_blank"> Community</a></span></li>
+            </ul>
         </div>
         <div class="alignY">
             <button class="openAppButton smallAppButton">
                 Open App
                 <img src="public/tractor.svg" alt="tractor"/>
             </button>
+            <div id="tooglerButton">
+                <div id="toogler" class="tooglerClosed">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
     </nav>
     <!-- <div id="landingThumbnail"> -->
-        <div id="landing">
+        <div id="landing" class="container" style="max-width: 100%; padding-bottom: 0;">
             <div id="news">
                 <span>News</span>
                 Harvest 3 is here. What’s new?

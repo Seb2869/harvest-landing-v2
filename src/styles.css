@@ -20,7 +20,7 @@
 html{
     font-family: Inter, Inter-fallback;
     -webkit-tap-highlight-color: transparent;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 *{
@@ -48,6 +48,10 @@ body{
 
 section{
     margin: 50px 0;
+}
+
+.hideMobile{
+    display: none;
 }
 
 .container{
@@ -88,12 +92,87 @@ section{
     padding: 15px;
 }
 
+#tooglerButton{
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    margin-left: 10px;
+    background: #FFFFFF;
+    border: 1px solid #E9E9E9;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#toogler{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#toogler span{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+.tooglerOpened span:nth-of-type(1){
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+.tooglerOpened span:nth-of-type(2){
+    opacity: 0;
+    transition: none;
+}
+
+.tooglerOpened span:nth-of-type(3){
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+.tooglerClosed span:nth-of-type(1){
+    top: 0;
+}
+
+.tooglerClosed span:nth-of-type(2){
+    top: 50%;
+}
+
+.tooglerClosed span:nth-of-type(3){
+    top: 100%;
+}
+
+#toogleNav{
+    position: absolute;
+    display: none;
+    list-style: none;
+    background-color: white;
+    top: 65px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.toogleNav li{
+    display: table;
+}
+
 .navLink{
+    display: block;
     margin-right: 32px;
     font-weight: 600;
     color: #475467;
     cursor: pointer;
     transition: color 0.2s ease-in-out;
+    margin: 15px 0;
+    font-size: 1.3rem;
+    letter-spacing: 0.09rem;
 }
 
 .navLink:hover{
@@ -163,6 +242,7 @@ section{
     font-size: 0.78rem;
     font-weight: 500;
     cursor: pointer;
+
 }
 
 #news span{
@@ -175,11 +255,13 @@ section{
 #landing h1{
     font-size: 3.75rem;
     margin: 16px 0 0 0;
+    text-align: center;
 }
 
 #landing h2{
     font-size: 1.3rem;
     margin: 24px 0 40px 0;
+    text-align: center;
 }
 
 #harvestAppImg{
@@ -187,6 +269,7 @@ section{
     display: flex;
     width: 100%;
     max-width: 1045px;
+    margin-top: 15px;
 }
 
 #harvestAppImg span{
@@ -203,9 +286,10 @@ section{
 
 #stats{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     max-width: 870px;
     margin: 96px auto;
+    gap: 30px 0;
 }
 
 .stat{
@@ -228,209 +312,6 @@ section{
 
 
 
-
-
-
-
-
-
-.sectiontitle{
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-
-.centerFlexColumn{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.hideMobile{
-    display: none;
-}
-
-.logoText{
-    display: none;
-}
-
-.icon{
-    width: 40px;
-    height: 40px;
-}
-
-
-#landingInfo{
-    padding: 20px;
-}
-
-#landingInfo h1{
-    font-size: 1.8em;
-}
-
-#landingInfo p{
-    word-spacing: 0.1em;
-    font-size: 1em;
-}
-
-#landingButtons{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.landingButton{
-    border-radius: 14px;
-    padding: 15px 30px;
-    font-size: 1em;
-    margin: 10px 20px 10px 0;
-    font-weight: bold;
-    border: none;
-    background-color: white;
-    color: black;
-    box-shadow: 0px 2.86296px 2.86296px rgba(0, 0, 0, 0.25);
-    transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out ;
-}
-
-.landingButton:hover{
-    box-shadow: 0px 1.86296px 1.86296px rgba(0, 0, 0, 0.25);
-    transform: translateY(2px);
-}
-
-
-#companies{
-    margin: 45px 0 20px 0;
-    font-size: 0.75em;
-}
-
-#companiesLogos{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.company{
-    margin: 10px;
-}
-
-#backgorund{
-    position: absolute;
-    top: 0;
-    height: 100%;
-    left: 0;
-    width: 100%;
-    z-index: -1;
-}
-
-#projectBoxes{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.projectBox{
-    display: flex;
-    flex-direction: column;
-    width: 330px;
-    margin: 20px 30px;
-    background: #FFFFFF;
-    border: 1.4px solid #F2F2F2;
-    border-radius: 17px;
-    text-decoration: none;
-    color: black;
-    transition: transform 0.15s ease-in-out;
-}
-
-.projectBox:hover{
-    transform: scale(1.02);
-}
-
-.projectName{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 16px 16px 0 0;
-    height: 170px;
-    overflow: hidden;
-}
-
-.projectName span{
-    z-index: 10;
-    font-size: 1.4rem;
-    letter-spacing: 0.1em;
-    font-weight: bold;
-    color: white;
-}
-
-.projectName img{
-    position: absolute;
-    left: 0;
-    width: 100%;
-    top: 0;
-    height: 100%;
-    z-index: 1;
-}
-
-.projectDescription{
-    font-size: 1rem;
-    padding: 30px 40px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 0px 0px 16px 16px;
-    flex: 1;
-}
-
-#twitterBoxes{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.twitterBox{
-    width: 100%;
-    max-width: 450px;
-    box-shadow: 0px 1.3px 2.6px rgba(0, 0, 0, 0.25);
-    border-radius: 11px;
-    padding: 20px;
-    margin: 20px;
-}
-
-.twitterBoxTitle{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 20px;
-    font-weight: bold;
-}
-
-.twitterBoxTitle img{
-    border-radius: 50%;
-}
-
-.ttProfile{
-    width: 20px;
-    height: 35px;
-    transition: transform 0.15s ease-in-out;
-}
-
-.ttProfile:hover{
-    transform: scale(1.1);
-}
-
-.ttProfile img{
-    width: 20px;
-    height: 35px;
-}
-
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 63px;
-    background: #2A312F;
-}
-
 @media (min-width: 768px){
     ::-webkit-scrollbar {
         width: 10px;
@@ -444,6 +325,27 @@ footer{
     }
     .hideMobile{
         display: block;
+    }
+    #tooglerButton{
+        display: none;
+    }
+    #toogleNav{
+        position: relative;
+        display: flex!important;
+        width: auto;
+        top: unset;
+        bottom: unset;
+        padding: 0;
+        height: auto;
+    }
+    .navLink{
+        font-weight: 600;
+        margin: 0 32px 0 0;
+        font-size: 1rem;
+    }
+    #stats{
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
     }
 }
 
