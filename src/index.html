@@ -43,9 +43,10 @@
     </nav>
     <!-- <div id="landingThumbnail"> -->
         <div id="landing" class="container" style="max-width: 100%; padding-bottom: 0;">
-            <div id="news">
+            <div id="news" class="alignY">
                 <span>News</span>
-                Harvest 3 is here. What’s new?
+                <label style="padding: 0 12px">Harvest 3 is here. What’s new?</label>
+                <img src="public/arrow-right.svg" />
             </div>
             <h1>Grow Your Crypto</h1>
             <h2>Connect wallet, deposit any token and let Harvest earn for you.</h2>
@@ -70,94 +71,42 @@
             <label>Total Users</label>
         </div>
     </section>
-
-    <!-- <section style="margin-top: 0;">
-        <div id="landing">
-            <div id="landingInfo">
-                <h1>We’re a decentralized <br> software house</h1>
-                <p>super coders building a better Web called <span>3.0</span></p>
-                <div id="landingButtons">
-                    <a href="https://t.me/maderaz" target="_blank" style="background: #A9594F; color: white;" class="landingButton">Hire us</a>
-                    <button data-destination="projects" class="scrollTo landingButton">Projects</button>
-                </div>
+    <section id="features" class="container">
+        <h4>Features</h4>
+        <h2>Yield Farming Made Easy</h2>
+        <span id="featuresInfo">Powerful platform to discover yield-generating opportunities and track your earnings </span>
+        <div id="featuresGrid">
+            <div class="feature">
+                <img class="lazyImg" data-src="public/features/tailored.svg" />
+                <label>Tailored Farm Pages</label>
+                <span>View APY breakdowns, rewards, and in-depth farm descriptions.</span>
             </div>
-            <img id="bg" src="public/bg_xl.webp" alt="background image"/>
-        </div>
-        <div id="companies" class="centerFlexColumn">
-            <div id="companiesLogos">
-                <img style="width:84px; height:23px" class="company" src="public/companies/bancor.svg" alt="bancor logo"/>
-                <img style="width: 99px; height: 23px" class="company" src="public/companies/balancer.svg" alt="balancer logo"/>
-                <img style="width: 88px; height: 26px" class="company" src="public/companies/harvest.svg" alt="harvest logo"/>
-                <img style="width: 65px; height: 17px" class="company" src="public/companies/apwine.svg" alt="apwine logo"/>
-                <img style="width: 84px; height: 22px" class="company" src="public/companies/superfluid.svg" alt="superfluid logo"/>
+            <div class="feature">
+                <img class="lazyImg" data-src="public/features/deposit.svg" />
+                <label>Deposit With Any Token</label>
+                <span>Use any token from your wallet to get started with Harvest. Powered by Wido.</span>
             </div>
-        </div>
-    </section> -->
-    <!-- <section id="projects">
-        <h2 class="sectiontitle">Projects</h2>
-        <div id="projectBoxes">
-            <a href="https://salary-stream.pozalabs.xyz/" target="_blank" class="projectBox">
-                <div class="projectName" style="background-color:#D3FFC9;">
-                    <span>SalaryStream</span>
-                    <img src="public/salary-stream.png" alt="project background image"/>
-                </div>
-                <div class="projectDescription">
-                    #1 Winning project for Superfluid’s Hackathon. Borrow against your salary stream via intuitive dashboard.
-                </div>
-            </a>
-            <a href="https://froog.co/" target="_blank" class="projectBox">
-                <div class="projectName" style="background-color:#5C7945;">
-                    <span>Froog</span>
-                    <img src="public/froog.png" alt="project background image"/>
-                </div>
-                <div class="projectDescription">
-                    The ultimate Web3 jobs aggregator. Featuring exotic gigs and positions, fully remote
-                </div>
-            </a>
-        </div>
-    </section> -->
-    <!-- <section id="twitterSection">
-        <h2 class="sectiontitle">Who are we?</h2>
-        <div id="twitterBoxes">
-            <div class="twitterBox">
-                <div class="twitterBoxTitle">
-                    <div class="logoImg">
-                        <img src="public/profiles/z.jpg"/> Z.
-                    </div>
-                    <a class="ttProfile" href="https://twitter.com/justz_eth" target="_blank"><img src="public/twitter.svg" alt="twitter logo"/><label class="logoText">Twitter</label></a>
-                </div>
-                <p>
-                    DeFi Boomer of 2017. At the intersection of marketing, UXUI & data. Contributed to Harvest, Bancor, APWine & others.
-                </p>
+            <div class="feature">
+                <img class="lazyImg" data-src="public/features/chart.svg" />
+                <label>Dynamic Charts</label>
+                <span>Explore APY, Deposit & My Balance history with dynamic charts.</span>
             </div>
-            <div class="twitterBox">
-                <div class="twitterBoxTitle">
-                    <div class="logoImg">
-                        <img src="public/profiles/matematik.jpg"/> P_P
-                    </div>
-                    <a class="ttProfile" href="https://twitter.com/PagPiotr" target="_blank"><img src="public/twitter.svg" alt="twitter logo"/><label class="logoText">Twitter</label></a>
-                </div>
-                <p>
-                    Self-taught solidity dev with 3 years of experience. Contribued to Harvest, multiple hackathons winner.
-                </p>
+            <div class="feature">
+                <img class="lazyImg" data-src="public/features/search.svg" />
+                <label>Advanced Search</label>
+                <span>Find new yield-generating opportunities at light speed. </span>
             </div>
-            <div class="twitterBox">
-                <div class="twitterBoxTitle">
-                    <div class="logoImg">
-                        <img src="public/profiles/a_b.jpg"/> a_b
-                    </div>
-                    <a class="ttProfile" href="https://twitter.com/a_b8x1" target="_blank"><img src="public/twitter.svg" alt="twitter logo"/><label class="logoText">Twitter</label></a>
-                </div>
-                <p>
-                    Full Stack with 5 years of experience. Contributed to Bancor, Harvest & multiple hackathon winner.
-                </p>
+            <div class="feature">
+                <img class="lazyImg" data-src="public/features/deposit.svg" />
+                <label>Portfolio Page</label>
+                <span>Track your earnings via single dashboard. </span>
+            </div>
+            <div class="feature">
+                <img class="lazyImg" data-src="public/features/money.svg" />
+                <label>Over 100 farms</label>
+                <span>Harvest homes all kinds of farms - NFT, Blue Chips, Stablecoin or Liquid ETH derivatives.</span>
             </div>
         </div>
-    </section> -->
-    <!-- <footer>
-        <div id="logo">
-            <img class="lazyImg" id="footerLogoImg" data-src="public/footer-logo.svg" style="width: 124px; height: 39px" alt="footer logo"/>
-        </div>
-    </footer> -->
+    </section>
 </body>
 </html>

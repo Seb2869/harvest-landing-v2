@@ -4,8 +4,8 @@
     font-weight: 400;
     font-display: swap;
     src: local(''),
-        url('public/fonts/inter.woff2') format('woff2'),
-        url('public/fonts/inter.woff') format('woff');
+        url('../public/fonts/inter.woff2') format('woff2'),
+        url('../public/fonts/inter.woff') format('woff');
 }
 
 @font-face {
@@ -46,10 +46,6 @@ body{
     flex-direction: column;
 }
 
-section{
-    margin: 50px 0;
-}
-
 .hideMobile{
     display: none;
 }
@@ -61,122 +57,9 @@ section{
     margin: 0 auto;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    font-weight: 700;
-    font-size: 21px;
-    letter-spacing: 0.07rem;
-    line-height: 31px;
-    color: #15202B;
-    margin-right: 40px;
-}
-
-.logo img{
-    background: #F6F6F6;
-    height: 52px;
-    width: 52px;
-    padding: 12px;
-    margin-right: 10px;
-    border-radius: 15px;
-}
-
 .alignY{
     display: flex;
     align-items: center;
-}
-
-#navabr{
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-}
-
-#tooglerButton{
-    width: 40px;
-    height: 40px;
-    padding: 12px;
-    margin-left: 10px;
-    background: #FFFFFF;
-    border: 1px solid #E9E9E9;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
-    border-radius: 12px;
-    cursor: pointer;
-    user-select: none;
-}
-
-#toogler{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-#toogler span{
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: black;
-    transition: all 0.2s ease-in-out;
-}
-
-.tooglerOpened span:nth-of-type(1){
-    top: 50%;
-    transform: rotate(45deg);
-}
-
-.tooglerOpened span:nth-of-type(2){
-    opacity: 0;
-    transition: none;
-}
-
-.tooglerOpened span:nth-of-type(3){
-    top: 50%;
-    transform: rotate(-45deg);
-}
-
-.tooglerClosed span:nth-of-type(1){
-    top: 0;
-}
-
-.tooglerClosed span:nth-of-type(2){
-    top: 50%;
-}
-
-.tooglerClosed span:nth-of-type(3){
-    top: 100%;
-}
-
-#toogleNav{
-    position: absolute;
-    display: none;
-    list-style: none;
-    background-color: white;
-    top: 65px;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-}
-
-.toogleNav li{
-    display: table;
-}
-
-.navLink{
-    display: block;
-    margin-right: 32px;
-    font-weight: 600;
-    color: #475467;
-    cursor: pointer;
-    transition: color 0.2s ease-in-out;
-    margin: 15px 0;
-    font-size: 1.3rem;
-    letter-spacing: 0.09rem;
-}
-
-.navLink:hover{
-    color: black;
 }
 
 .openAppButton{
@@ -212,13 +95,6 @@ section{
     margin-left: 12px;
 }
 
-#landingThumbnail{
-    background-image: url("./public/landingBackgroundThumbnail.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-}
 
 #landing{
     display: flex;
@@ -226,7 +102,7 @@ section{
     align-items: center;
     width: 100%;
     margin: 0 auto;
-    background-image: url("./public/landingBackground.webp");
+    background-image: url("../public/landingBackground.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -238,11 +114,15 @@ section{
     background: rgba(255, 255, 255, 0.35);
     border-radius: 16.2333px;
     color: #18371F;
-    padding: 5px;
+    padding: 5px 10px;
     font-size: 0.78rem;
     font-weight: 500;
     cursor: pointer;
 
+}
+
+#news label{
+    cursor: pointer;
 }
 
 #news span{
@@ -288,7 +168,7 @@ section{
     display: grid;
     grid-template-columns: 1fr;
     max-width: 870px;
-    margin: 96px auto;
+    margin: 50px auto;
     gap: 30px 0;
 }
 
@@ -310,7 +190,62 @@ section{
     margin-top: 15px;
 }
 
+#features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
+#features h4{
+    color: #FF9400;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+#features h2{
+    color: #101828;
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin: 12px 0 20px 0;
+}
+
+#featuresInfo{
+    color: #475467;
+    font-size: 1.25rem;
+}
+
+#featuresGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 64px;
+    justify-content: center;
+    gap: 32px;
+}
+
+.feature{
+    padding: 10px;
+    text-align: center;
+}
+
+.feature img{
+    width: 48px;
+    height: 48px;
+}
+
+.feature label{
+    display: block;
+    font-size: 1.25rem;
+    color: #101828;
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+}
+
+.feature span{
+    color: #475467;
+    font-size: 1rem;
+}
 
 @media (min-width: 768px){
     ::-webkit-scrollbar {
@@ -320,37 +255,24 @@ section{
         background: #E0E0E0;
         border-radius: 8px;
     }
-    section{
-        margin: 96px 0;
-    }
     .hideMobile{
         display: block;
-    }
-    #tooglerButton{
-        display: none;
-    }
-    #toogleNav{
-        position: relative;
-        display: flex!important;
-        width: auto;
-        top: unset;
-        bottom: unset;
-        padding: 0;
-        height: auto;
-    }
-    .navLink{
-        font-weight: 600;
-        margin: 0 32px 0 0;
-        font-size: 1rem;
     }
     #stats{
         grid-template-columns: 1fr 1fr;
         gap: 0;
+        margin: 96px auto;
+    }
+    #featuresGrid{
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (min-width: 992px){
     html{
         font-size: 16px;
+    }
+    #featuresGrid{
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }

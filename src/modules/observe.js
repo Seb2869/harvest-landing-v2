@@ -20,8 +20,8 @@ function handleIntersections(entries, observer) {
 function getIntersectionObserver() {
   if (defaultObserver === undefined) {
       defaultObserver = new IntersectionObserver(handleIntersections, {
-        rootMargin: '0px',
-        threshold: '0.7',
+        rootMargin: '150px',
+        threshold: '0',
       });
   }
   return defaultObserver;
