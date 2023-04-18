@@ -201,6 +201,38 @@ section{
     height: 100%;
 }
 
+#stats{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 870px;
+    margin: 96px auto;
+}
+
+.stat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+}
+
+.stat span{
+    color: #FF9400;
+    font-size: 3.75rem;
+}
+
+.stat label{
+    font-size: 1.2rem;
+    color: #101828;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
 
 .sectiontitle{
     margin-bottom: 40px;
@@ -400,15 +432,18 @@ footer{
 }
 
 @media (min-width: 768px){
-    .hideMobile{
-        display: block;
-    }
     ::-webkit-scrollbar {
         width: 10px;
     }
     ::-webkit-scrollbar-thumb {
         background: #E0E0E0;
         border-radius: 8px;
+    }
+    section{
+        margin: 96px 0;
+    }
+    .hideMobile{
+        display: block;
     }
 }
 
