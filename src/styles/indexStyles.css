@@ -101,6 +101,14 @@ body{
 }
 
 
+#landingThumbnail{
+    background-image: url("../public/landingBackgroundThumbnail.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
 #landing{
     display: flex;
     flex-direction: column;
@@ -161,6 +169,10 @@ body{
     position: relative;
     width: 100%;
     padding-bottom: 47%;
+    background-image: url("../public/appScreenThumbnail.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #harvestAppImg span img{
@@ -366,14 +378,41 @@ body{
 #communityButtons{
     display: flex;
     justify-content: center;
+    gap: 0 50px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
-#communityButtons button:first-of-type{
-
+#communityButtons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 188px;
+    padding: 16px 0;
+    color: white;
+    font-size: 1.125rem;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: transform 0.2s ease-in-out;
 }
 
-#communityButtons button:last-of-type{
+#communityButtons a:hover{
+    transform: scale(1.03);
+}
 
+#communityButtons a img{
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
+}
+
+#communityButtons a:first-of-type{
+    background-color: #8C9EFF;
+}
+
+#communityButtons a:last-of-type{
+    background-color: #1D9BF0;
 }
 
 @media (min-width: 768px){
