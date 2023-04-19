@@ -64,11 +64,11 @@ const accordionTooglers = document.getElementsByClassName('accordionTitle');
         const body = accordion.children[1];
         if(body.style.height === "0px"){
             body.style.height = `${body.scrollHeight}px`;
-            el.setAttribute('src', 'public/minus.svg');
+            el.children[0].setAttribute('src', 'public/minus.svg');
         }
         else{
             body.style.height = "0px";
-            el.setAttribute('src', 'public/plus.svg')
+            el.children[0].setAttribute('src', 'public/plus.svg')
         }
     }, false)
 });

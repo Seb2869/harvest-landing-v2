@@ -76,6 +76,14 @@ body{
     font-weight: 600;
 }
 
+.buttonHover{
+    transition: transform 0.2s ease-in-out;
+}
+
+.buttonHover:hover{
+    transform: scale(1.03);
+}
+
 .smallAppButton{
     font-size: 0.78rem;
     padding: 11px 19px;
@@ -99,7 +107,6 @@ body{
     height: 18px;
     margin-left: 12px;
 }
-
 
 #landingThumbnail{
     background-image: url("../public/landingBackgroundThumbnail.webp");
@@ -296,12 +303,14 @@ body{
     font-size: 2.25rem;
     font-weight: 600;
     margin: 0;
+    text-align: center;
 }
 
 .sectionLabel{
     color: var(--light);
     font-size: 1.25rem;
     margin: 20px 0 64px 0;
+    text-align: center;
 }
 
 .accordion{
@@ -355,7 +364,7 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px 0;
-    margin: 0 0 96px 0;
+    margin: 0;
     align-items: center;
     justify-items: center;
 }
@@ -373,6 +382,8 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background: #F9FAFB;
+    padding: 96px 15px 15px 15px;
 }
 
 #communityButtons{
@@ -380,7 +391,7 @@ body{
     justify-content: center;
     gap: 0 50px;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin: 50px;
 }
 
 #communityButtons a{
@@ -394,11 +405,6 @@ body{
     border-radius: 8px;
     font-weight: bold;
     margin-top: 20px;
-    transition: transform 0.2s ease-in-out;
-}
-
-#communityButtons a:hover{
-    transform: scale(1.03);
 }
 
 #communityButtons a img{
@@ -413,6 +419,94 @@ body{
 
 #communityButtons a:last-of-type{
     background-color: #1D9BF0;
+}
+
+#token{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    margin-top: -15px;
+    gap: 0 30px;
+}
+
+#tokenButtons{
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 12px;
+}
+
+#tokenButtons a{
+    text-align: center;
+    min-width: 180px;
+    margin-bottom: 15px;
+}
+
+.learnMoreBtn{
+    background-color: white;
+    border: 1.28611px solid #D0D5DD;
+    box-shadow: 0px 1.28611px 2.57222px rgba(16, 24, 40, 0.05);
+}
+
+#tokenImg{
+    width: 100%;
+    max-width: 600px;
+}
+
+.tokenList{
+    list-style: none;
+    padding-left: 16px;
+    margin-top: 32px;
+}
+
+.tokenList li{
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.tokenList li img{
+    margin-right: 15px;
+}
+
+#links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 64px 0;
+    justify-items: center;
+}
+
+#links label{
+    color: #667085;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+#links ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 16px;
+}
+
+#links ul li{
+    color: var(--light);
+    font-weight: bold;
+    margin-top: 12px;
+    transition: color 0.2s ease-in-out;
+}
+
+#links ul li:hover{
+    color: black;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer span{
+    color: #667085;
 }
 
 @media (min-width: 768px){
@@ -437,6 +531,18 @@ body{
     #certs{
         grid-template-columns: 1fr 1fr;
         gap: 30px 20px;
+    }
+    #token{
+        grid-template-columns: 1fr 1fr;
+    }
+    #token h2{
+        text-align: left;
+    }
+    #tokenButtons{
+        justify-content: flex-start;
+    }
+    #links{
+        justify-items: start
     }
 }
 

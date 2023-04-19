@@ -29,7 +29,7 @@
             </ul>
         </div>
         <div class="alignY">
-            <button class="openAppButton smallAppButton">
+            <button class="openAppButton smallAppButton buttonHover">
                 Open App
                 <img src="public/tractor.svg" alt="tractor"/>
             </button>
@@ -51,7 +51,7 @@
             </div>
             <h1>Grow Your Crypto</h1>
             <h2>Connect wallet, deposit any token and let Harvest earn for you.</h2>
-            <button class="openAppButton largeAppButton">
+            <button class="openAppButton largeAppButton buttonHover">
                 Open App
                 <img src="public/tractor.svg" alt="tractor"/>
             </button>
@@ -173,20 +173,83 @@
                 </a>
             </div>
         </section>
-        <section id="community">
-            <h2 class="sectionTitle">Join Our Community</h2>
-            <label class="sectionLabel" style="margin-bottom: 44px;">Meet like-minded DeFi farmers and grow together in a peaceful environment.</label>
-            <div id="communityButtons">
-                <a href="" target="_blank">
-                    Join Discord
-                    <img src="public/discord.svg" />
-                </a>
-                <a href="" target="_blank">
-                    Follow on
-                    <img src="public/twitter.svg" />
-                </a>
+    </div>
+    <section id="community">
+        <h2 class="sectionTitle">Join Our Community</h2>
+        <label class="sectionLabel" style="margin-bottom: 0;">Meet like-minded DeFi farmers and grow together in a peaceful environment.</label>
+        <div id="communityButtons">
+            <a href="" target="_blank" class="buttonHover">
+                Join Discord
+                <img class="lazyImg" data-src="public/discord.svg" />
+            </a>
+            <a href="" target="_blank" class="buttonHover">
+                Follow on
+                <img class="lazyImg" data-src="public/twitter.svg" />
+            </a>
+        </div>
+    </section>
+    <div class="container">
+        <section id="token">
+            <div>
+                <h2 class="sectionTitle">Discover $FARM Token</h2>
+                <ul class="tokenList">
+                    <li class="sectionLabel alignY">
+                        <img class="lazyImg" data-src="public/check.svg"/>
+                        Available on Coinbase, Binance, Kraken & Crypto.com
+                    </li>
+                    <li class="sectionLabel alignY">
+                        <img class="lazyImg" data-src="public/check.svg"/>
+                        Available on Uniswap, Sushiswap & CalemotDEX
+                    </li>
+                    <li class="sectionLabel alignY">
+                        <img class="lazyImg" data-src="public/check.svg"/>
+                        Entitled to Platform Rewards
+                    </li>
+                </ul>
+                <div class="alignY" id="tokenButtons">
+                    <a href="#" target="_blank" class="learnMoreBtn largeAppButton buttonHover">
+                        Learn more
+                    </a>
+                    <a href="#" target="_blank" class="openAppButton largeAppButton buttonHover alignY">
+                        Open App
+                        <img src="public/tractor.svg" alt="tractor"/>
+                    </a>
+                </div>
+            </div>
+            <img id="tokenImg" class="lazyImg" data-src="public/farmToken.webp" />
+        </section>
+        <section id="links">
+            <div>
+                <label>Resources</label>
+                <ul>
+                    <li><a href="#" target="_blank">Blog</a></li>
+                    <li><a href="#" target="_blank">Docs</a></li>
+                    <li><a href="#" target="_blank">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <label>Social</label>
+                <ul>
+                    <li><a href="#" target="_blank">Twitter</a></li>
+                    <li><a href="#" target="_blank">Lenster</a></li>
+                    <li><a href="#" target="_blank">Medium</a></li>
+                </ul>
+            </div>
+            <div>
+                <label>Legal</label>
+                <ul>
+                    <li><a href="#" target="_blank">Terms</a></li>
+                    <li><a href="#" target="_blank">Privacy</a></li>
+                </ul>
             </div>
         </section>
+        <footer>
+            <a class="logo" href="/">
+                <img src="public/logo.svg" alt="harvest logo"/>
+                <span class="hideMobile">Harvest</span>
+            </a>
+            <span>2023</span>
+        </footer>
     </div>
 </body>
 </html>
