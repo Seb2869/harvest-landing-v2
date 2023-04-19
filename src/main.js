@@ -1,6 +1,7 @@
 import "./styles/indexStyles.css"
 import "./styles/navStyles.css"
 import observeImg from './modules/observe'
+import './public/minus.svg'
 // import './public/social-card.png'
 
 //nav
