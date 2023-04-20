@@ -11,8 +11,6 @@
     <link rel="icon" type="image/x-icon" href="public/logo.svg">
     <link rel="preload" href="public/landingBackgroundThumbnail.webp" as="image">
     <link rel="preload" href="public/appScreenThumbnail.webp" as="image">
-	<!-- <link rel="preload" href="public/landingBackground.webp" as="image">
-	<link rel="preload" href="public/appScreen.webp" as="image"> -->
 	<link rel="preload" href="public/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
@@ -24,15 +22,15 @@
             </a>
             <ul id="toogleNav">
                 <li><span class="scrollTo navLink" data-destination="features">Features</span></li>
-                <li><span class="navLink"><a href="https://t.me/maderaz" target="_blank"> Docs</a></span></li>
+                <li><span class="navLink"><a href="http://docs.harvest.finance/" target="_blank"> Docs</a></span></li>
                 <li><span class="scrollTo navLink" data-destination="community">Community</span></li>
             </ul>
         </div>
         <div class="alignY">
-            <button class="openAppButton smallAppButton buttonHover">
+            <a class="openAppButton smallAppButton buttonHover" href="https://app.harvest.finance/">
                 Open App
                 <img src="public/tractor.svg" alt="tractor"/>
-            </button>
+            </a>
             <div id="tooglerButton">
                 <div id="toogler" class="tooglerClosed">
                     <span></span>
@@ -51,18 +49,29 @@
             </div>
             <h1>Grow Your Crypto</h1>
             <h2>Connect wallet, deposit any token and let Harvest earn for you.</h2>
-            <button class="openAppButton largeAppButton buttonHover">
+            <a class="openAppButton largeAppButton buttonHover" href="https://app.harvest.finance/">
                 Open App
                 <img src="public/tractor.svg" alt="tractor"/>
-            </button>
+            </a>
             <div id="harvestAppImg">
                 <span>
-                    <img src="public/appScreen.webp" />
+                    <img src="public/appScreen.png" />
                 </span>
             </div>
         </div>
     </div>
     <div class="container">
+        <section id="seenOn">
+            <a href="https://www.coindesk.com/markets/2020/10/21/harvest-finance-doubles-total-value-locked-to-704m-in-one-week/" target="_blank">
+                <img src="public/seen-on/coindesk.png" alt="coindesk" style="width: 206px; height: 41px;">
+            </a>
+            <a href="https://cointelegraph.com/news/defi-sector-tokens-offer-shelter-as-bitcoin-falls-below-48-5k" target="_blank">
+                <img src="public/seen-on/cointelegraph.png" alt="cointelegraph" style="width: 230px; height: 44px;">
+            </a>
+            <a href="https://www.bloomberg.com/news/videos/2022-01-19/from-bitcoin-to-defi-in-12-short-years-video" target="_blank">
+                <img src="public/seen-on/bloomberg.png" alt="bloomberg" style="width: 217px; height: 41px;">
+            </a>
+        </section>
         <section id="stats">
             <div class="stat">
                 <span>$213M+</span>
@@ -74,7 +83,7 @@
             </div>
         </section>
         <section id="features">
-            <span class="smallSectionTitle">Features</span>
+            <span class="smallSectionTitle">Our Ecosystem</span>
             <h2>Yield Farming Made Easy</h2>
             <span id="featuresInfo">Powerful platform to discover yield-generating opportunities and track your earnings </span>
             <div id="featuresGrid">
@@ -99,7 +108,7 @@
                     <span>Find new yield-generating opportunities at light speed. </span>
                 </div>
                 <div class="feature">
-                    <img class="lazyImg" data-src="public/features/deposit.svg" />
+                    <img class="lazyImg" data-src="public/features/portfolio.svg" />
                     <label>Portfolio Page</label>
                     <span>Track your earnings via single dashboard. </span>
                 </div>
@@ -160,16 +169,16 @@
             <h2>AUDITED BY</h2>
             <div id="certs">
                 <a href="https://github.com/harvest-finance/harvest/blob/master/audits/LeastAuthority-Harvest.pdf" target="_blank">
-                    <img class="lazyImg" data-src="public/auditors/least.svg" alt=""/>
+                    <img class="lazyImg" data-src="public/auditors/least.svg" alt="" style="width: 242px; height: 49px"/>
                 </a>
                 <a href="https://github.com/harvest-finance/harvest/blob/master/audits/Haechi-Harvest.pdf" target="_blank">
-                    <img class="lazyImg" data-src="public/auditors/haechi.svg" alt=""/>
+                    <img class="lazyImg" data-src="public/auditors/haechi.svg" alt="" style="width: 192px; height: 40px"/>
                 </a>
                 <a href="https://github.com/harvest-finance/harvest/blob/master/audits/PeckShield-Harvest.pdf" target="_blank">
-                    <img class="lazyImg" data-src="public/auditors/peck.svg" alt=""/>
+                    <img class="lazyImg" data-src="public/auditors/peck.svg" alt="" style="width: 199px; height: 56px"/>
                 </a>
                 <a href="https://github.com/harvest-finance/harvest/blob/master/audits/CertiK-Harvest.pdf" target="_blank">
-                    <img class="lazyImg" data-src="public/auditors/certik.svg" alt=""/>
+                    <img class="lazyImg" data-src="public/auditors/certik.svg" alt="" style="width: 206px; height: 53px"/>
                 </a>
             </div>
         </section>
@@ -178,11 +187,11 @@
         <h2 class="sectionTitle">Join Our Community</h2>
         <label class="sectionLabel" style="margin-bottom: 0;">Meet like-minded DeFi farmers and grow together in a peaceful environment.</label>
         <div id="communityButtons">
-            <a href="" target="_blank" class="buttonHover">
+            <a href="https://discord.gg/xHXe3tYjPY" target="_blank" class="buttonHover">
                 Join Discord
                 <img class="lazyImg" data-src="public/discord.svg" />
             </a>
-            <a href="" target="_blank" class="buttonHover">
+            <a href="https://twitter.com/harvest_finance" target="_blank" class="buttonHover">
                 Follow on
                 <img class="lazyImg" data-src="public/twitter.svg" />
             </a>
@@ -210,29 +219,31 @@
                     <a href="#" target="_blank" class="learnMoreBtn largeAppButton buttonHover">
                         Learn more
                     </a>
-                    <a href="#" target="_blank" class="openAppButton largeAppButton buttonHover alignY">
+                    <a href="https://app.harvest.finance/" class="openAppButton largeAppButton buttonHover alignY">
                         Open App
                         <img src="public/tractor.svg" alt="tractor"/>
                     </a>
                 </div>
             </div>
-            <img id="tokenImg" class="lazyImg" data-src="public/farmToken.webp" />
+            <span id="tokenImgBox">
+                <img id="tokenImg" class="lazyImg" data-src="public/farmToken.png" />
+            </span>
         </section>
         <section id="links">
             <div>
                 <label>Resources</label>
                 <ul>
-                    <li><a href="#" target="_blank">Blog</a></li>
-                    <li><a href="#" target="_blank">Docs</a></li>
+                    <li><a href="https://medium.com/harvest-finance" target="_blank">Blog</a></li>
+                    <li><a href="http://docs.harvest.finance/" target="_blank">Docs</a></li>
                     <li><a href="#" target="_blank">FAQ</a></li>
                 </ul>
             </div>
             <div>
                 <label>Social</label>
                 <ul>
-                    <li><a href="#" target="_blank">Twitter</a></li>
-                    <li><a href="#" target="_blank">Lenster</a></li>
-                    <li><a href="#" target="_blank">Medium</a></li>
+                    <li><a href="https://twitter.com/harvest_finance" target="_blank">Twitter</a></li>
+                    <li><a href="https://lenster.xyz/u/harvest" target="_blank">Lenster</a></li>
+                    <li><a href="https://open.kakao.com/o/g9z8qgDd" target="_blank">KakaoTalk </a></li>
                 </ul>
             </div>
             <div>
