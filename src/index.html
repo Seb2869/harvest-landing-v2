@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="robots" content="noindex">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,7 +46,7 @@
             <div id="news" class="alignY">
                 <span>News</span>
                 <label style="padding: 0 12px">Harvest 3 is here. What’s new?</label>
-                <img src="public/arrow-right.svg" />
+                <img src="public/arrow-right.svg" style="width: 12px; height: 12px;"/>
             </div>
             <h1>Grow Your Crypto</h1>
             <h2>Connect wallet, deposit any token and let Harvest earn for you.</h2>
@@ -225,9 +226,22 @@
                     </a>
                 </div>
             </div>
-            <span id="tokenImgBox">
-                <img id="tokenImg" class="lazyImg" data-src="public/farmToken.png" />
-            </span>
+            <div id="tokenImgBox">
+                <span id="tokenWrapper">
+                    <img id="tokenImg" class="lazyImg" data-src="public/farmToken.png" />
+                </span>
+            </div>
+        </section>
+        <section id="companies">
+            <div class="companies">
+                <img class="lazyImg" data-src="public/companies/bancor.png" style="width: 80px; height: 26px;" alt="bancor image"/>
+                <img class="lazyImg" data-src="public/companies/binance.png" style="width: 94px; height: 26px;" alt="binance image"/>
+                <img class="lazyImg" data-src="public/companies/coinbase.png" style="width: 79px; height: 19px;" alt="coinbase image"/>
+                <img class="lazyImg" data-src="public/companies/crypto_com.png" style="width: 121px; height: 26px;" alt="crypto_com image"/>
+                <img class="lazyImg" data-src="public/companies/uniswap.png" style="width: 97px; height: 26px;" alt="uniswap image"/>
+                <img class="lazyImg" data-src="public/companies/sushiswap.png" style="width: 120px; height: 26px;" alt="sushiswap image"/>
+                <img class="lazyImg" data-src="public/companies/kraken.png" style="width: 97px; height: 26px;" alt="kraken image"/>
+            </div>
         </section>
         <section id="links">
             <div>
