@@ -2,7 +2,7 @@ import "./styles/indexStyles.css"
 import "./styles/navStyles.css"
 import observeImg from './modules/observe'
 import './public/minus.svg'
-// import './public/social-card.png'
+import './public/social-card.jpg'
 
 //nav
 const tooglerButton = document.getElementById('tooglerButton');
