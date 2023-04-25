@@ -559,9 +559,9 @@ footer hr{
     margin: 45px 0 32px 0;
 }
 
-/* footer ul li{
-    margin: ;
-} */
+footer ul li{
+    cursor: pointer;
+}
 
 @media (min-width: 768px){
     ::-webkit-scrollbar {
