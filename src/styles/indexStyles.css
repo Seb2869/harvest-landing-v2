@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'Inter';
     font-style: normal;
+    /* font-weight: 100 900; */
     font-weight: 400;
     font-display: swap;
     src: local(''),
@@ -71,6 +72,7 @@ body{
 .openAppButton{
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: black;
     color: white;
     box-shadow: 0px 0.688861px 1.37772px rgba(16, 24, 40, 0.05);
@@ -129,13 +131,17 @@ body{
     color: white;
 }
 
+#landing .openAppButton{
+    width: 100%;
+}
+
 #news{
     margin-top: 60px;
     background: rgba(255, 255, 255, 0.35);
     border-radius: 16.2333px;
     color: #18371F;
     padding: 5px 10px;
-    font-size: 0.78rem;
+    font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
@@ -158,15 +164,17 @@ body{
 }
 
 #landing h1{
-    font-size: 3.75rem;
+    font-size: 2.6rem;
     margin: 16px 0 0 0;
     text-align: center;
+    font-weight: 900;
 }
 
 #landing h2{
     font-size: 1.3rem;
-    margin: 24px 0 50px 0;
+    margin: 24px 0 30px 0;
     text-align: center;
+    font-weight: 400;
 }
 
 #harvestAppImg{
@@ -204,10 +212,17 @@ body{
 
 #seenOn a{
     display: block;
+    width: 100%;
+    max-width: 150px;
+    cursor: pointer;
 }
 
 #seenOn a:hover img{
     filter: brightness(0%);
+}
+
+#seenOn img{
+    max-width: 100%;
 }
 
 #stats{
@@ -368,7 +383,7 @@ body{
     font-size: 1rem;
     padding-right: 40px;
     overflow: hidden;
-    transition: height 0.2s ease-in-out;
+    transition: height 0.2s ease;
 }
 
 #audit{
@@ -384,8 +399,8 @@ body{
 
 #certs{
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px 0;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
     margin: 0;
     align-items: center;
     justify-items: center;
@@ -475,6 +490,7 @@ body{
 #tokenImgBox{
     max-width: 320px;
     width: 100%;
+    margin-top: 50px;
 }
 
 #tokenWrapper{
@@ -508,7 +524,7 @@ body{
 #companies{
     display: flex;
     justify-content: center;
-    margin-top: 144px;
+    margin-top: 77px;
 }
 
 #companies img{
@@ -558,8 +574,24 @@ footer hr{
     .hideMobile{
         display: block;
     }
+    #landing .openAppButton{
+        width: auto;
+    }
+    #landing h1{
+        font-size: 3.75rem;
+    }
+    #landing h2{
+        font-size: 600;
+        margin: 24px 0 50px 0;
+    }
+    #news{
+        font-size: 0.78rem;
+    }
     #seenOn{
         margin-top: 96px;
+    }
+    #seenOn a{
+        max-width: 250px;
     }
     #stats{
         grid-template-columns: 1fr 1fr;
@@ -596,9 +628,8 @@ footer hr{
     #tokenButtons{
         justify-content: flex-start;
     }
-    #links{
-        justify-items: start;
-        margin: 125px 0;
+    #tokenImgBox{
+        margin-top: 0;
     }
 }
 
