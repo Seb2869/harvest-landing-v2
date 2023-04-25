@@ -263,6 +263,7 @@ body{
     color: #FF9400;
     font-size: 1rem;
     font-weight: 600;
+    text-align: center;
 }
 
 #features h2{
@@ -404,6 +405,10 @@ body{
     margin: 0;
     align-items: center;
     justify-items: center;
+}
+
+#certs a label{
+    display: none;
 }
 
 #certs img{
