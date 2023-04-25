@@ -304,6 +304,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .platforms img{
@@ -472,7 +473,7 @@ body{
 }
 
 #tokenImgBox{
-    max-width: 400px;
+    max-width: 320px;
     width: 100%;
 }
 
@@ -507,52 +508,44 @@ body{
 #companies{
     display: flex;
     justify-content: center;
-    margin-top: 74px;
+    margin-top: 144px;
 }
 
 #companies img{
     margin: 20px;
 }
 
-#links{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 85px 0;
-    justify-items: center;
-}
-
-#links label{
-    color: #667085;
-    font-size: 0.875rem;
-    font-weight: bold;
-}
-
-#links ul{
-    list-style: none;
-    padding: 0;
-    margin-top: 16px;
-}
-
-#links ul li{
-    color: var(--light);
-    font-weight: bold;
-    margin-top: 12px;
-    transition: color 0.2s ease-in-out;
-}
-
-#links ul li:hover{
-    color: black;
-}
-
 footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #000000;
+    color: white;
+    padding: 64px 0 48px 0;
+    margin-top: 30px;
 }
 
 footer span{
-    color: #667085;
+    color: white;
 }
+
+footer ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    gap: 32px;
+    font-weight: bold;
+}
+
+footer hr{
+    height: 0;
+    border: 0;
+    border-bottom: 1px solid #475467;
+    margin: 45px 0 32px 0;
+}
+
+/* footer ul li{
+    margin: ;
+} */
 
 @media (min-width: 768px){
     ::-webkit-scrollbar {
