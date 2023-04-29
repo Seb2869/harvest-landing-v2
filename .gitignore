@@ -7,7 +7,7 @@ webpack.config.js
 /dist
 
 # static assets
-/src/public
+# /src/public
 
 # local env files
 .env
