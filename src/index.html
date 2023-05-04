@@ -8,17 +8,18 @@
     <meta name="twitter:image" content="https://harvest.finance/public/social-card.jpg" />
     <title>Harvest - Web3 Platform to Earn on Your Crypto</title>
     <meta name="description" content="Connect wallet, deposit any token and let Harvest earn for you. The easiest place in DeFi to put your idle crypto assets to work." />
-    <link rel="icon" type="image/x-icon" href="public/logo.svg">
+    <link rel="icon" type="image/x-icon" href="public/harvest-icon.svg">
     <link rel="preload" href="public/landingBackgroundThumbnail.png" as="image">
     <link rel="preload" href="public/appScreenThumbnail.webp" as="image">
-	<link rel="preload" href="public/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav id="navabr" class="container">
         <div class="alignY">
             <a class="logo" href="/">
-                <img src="public/logo.svg" alt="harvest logo"/>
-                <span class="hideMobile">Harvest</span>
+                <img src="public/logo-black.svg" alt="harvest logo"/>
             </a>
             <ul id="toogleNav">
                 <li><span class="scrollTo navLink" data-destination="features">Features</span></li>
@@ -27,7 +28,7 @@
             </ul>
         </div>
         <div class="alignY">
-            <a class="openAppButton smallAppButton buttonHover" href="https://app.harvest.finance/">
+            <a class="openAppButton smallAppButton buttonHover hideMobile" href="https://app.harvest.finance/">
                 Open App
                 <img src="public/tractor.svg" alt="tractor"/>
             </a>
@@ -204,7 +205,7 @@
     <div class="container">
         <section id="token">
             <div>
-                <h2 class="sectionTitle">Discover FARM Token</h2>
+                <h2 class="sectionTitle">Discover <span style="font-weight: 700;">FARM</span> Token</h2>
                 <ul class="tokenList">
                     <li class="sectionLabel alignY">
                         <img class="lazyImg" data-src="public/check.svg" alt="check"/>
@@ -250,8 +251,7 @@
     <footer>
         <div class="container">
             <a class="logo" href="/">
-                <img src="public/logo.svg" alt="harvest logo"/>
-                <span>Harvest</span>
+                <img src="public/logo-white.svg" alt="harvest logo"/>
             </a>
             <div style="margin: 32px 0;">Connect wallet, deposit any token and let Harvest earn for you.</div>
             <ul>

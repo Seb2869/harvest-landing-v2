@@ -1,20 +1,9 @@
 @font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    /* font-weight: 100 900; */
-    font-weight: 400;
-    font-display: swap;
-    src: local(''),
-        url('../public/fonts/inter.woff2') format('woff2'),
-        url('../public/fonts/inter.woff') format('woff');
-}
-
-@font-face {
     font-family: "Inter-fallback";
-    size-adjust: 100%;
+    size-adjust: 105%;
     letter-spacing: 10px;
     descent-override: 24%;
-    ascent-override: 94%;
+    ascent-override: 84%;
     src: local("Arial");
 }
 
@@ -24,7 +13,8 @@
 }
 
 html{
-    font-family: Inter, Inter-fallback;
+    font-family: 'Inter-fallback';
+    font-family: 'Inter', 'Inter-fallback';
     -webkit-tap-highlight-color: transparent;
     font-size: 14px;
 }
@@ -34,7 +24,7 @@ html{
 }
 
 a, button{
-    font-family: Inter, Inter-fallback;
+    font-family: 'Inter', Inter-fallback;
     cursor: pointer;
     outline: none;
     text-decoration: none;
@@ -53,10 +43,6 @@ body{
     flex-direction: column;
 }
 
-.hideMobile{
-    display: none;
-}
-
 .container{
     width: 100%;
     max-width: 1280px;
@@ -73,7 +59,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: #1B1C2D;
     color: white;
     box-shadow: 0px 0.688861px 1.37772px rgba(16, 24, 40, 0.05);
     font-weight: 600;
@@ -167,14 +153,14 @@ body{
     font-size: 2.6rem;
     margin: 16px 0 0 0;
     text-align: center;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 #landing h2{
     font-size: 1.3rem;
     margin: 24px 0 30px 0;
     text-align: center;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 #harvestAppImg{
@@ -568,6 +554,12 @@ footer ul li{
     cursor: pointer;
 }
 
+@media(max-width: 767px){
+    .hideMobile{
+        display: none!important;
+    }
+}
+
 @media (min-width: 768px){
     ::-webkit-scrollbar {
         width: 10px;
@@ -575,9 +567,6 @@ footer ul li{
     ::-webkit-scrollbar-thumb {
         background: #E0E0E0;
         border-radius: 8px;
-    }
-    .hideMobile{
-        display: block;
     }
     #landing .openAppButton{
         width: auto;
