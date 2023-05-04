@@ -93,7 +93,6 @@
     transition: color 0.2s ease-in-out;
     margin: 15px 0;
     font-size: 1.3rem;
-    letter-spacing: 0.09rem;
 }
 
 .navLink:hover{
